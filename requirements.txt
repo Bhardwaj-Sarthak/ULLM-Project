@@ -1,0 +1,11 @@
+nbformat
+nbconvert
+huggingface_hub
+e2b-code-interpreter
+transformers
+traitlets
+openai
+gradio
+jupyterlab
+ipywidgets
+pandas
