@@ -1,0 +1,35 @@
+{
+  "data_understanding": {
+    "score": 0.22899999999999998,
+    "evidence": [
+      "visual_eda:scatter",
+      "visual_eda:seaborn"
+    ],
+    "rationale": "Data Understanding coverage=0.25, depth=0.07"
+  },
+  "data_preparation": {
+    "score": 0.117,
+    "evidence": [
+      "encoding:LabelEncoder"
+    ],
+    "rationale": "Data Preparation coverage=0.17, depth=0.04"
+  },
+  "modelling": {
+    "score": 0.21500000000000002,
+    "evidence": [
+      "classical_models:RandomForest",
+      "classical_models:XGBRegressor"
+    ],
+    "rationale": "Modelling coverage=0.25, depth=0.04"
+  },
+  "evaluation": {
+    "score": 0.389,
+    "evidence": [
+      "model_diagnostics:shap",
+      "interpretability:shap"
+    ],
+    "rationale": "Evaluation coverage=0.50, depth=0.10"
+  },
+  "overall_score": 0.238,
+  "summary": "DU:weak (0.22899999999999998); DP:weak (0.117); M:weak (0.21500000000000002); E:weak (0.389)"
+}

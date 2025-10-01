@@ -1,0 +1,31 @@
+{
+  "data_understanding": {
+    "score": 0.05,
+    "evidence": [],
+    "rationale": "Data Understanding coverage=0.00, depth=0.00"
+  },
+  "data_preparation": {
+    "score": 0.0,
+    "evidence": [],
+    "rationale": "Data Preparation coverage=0.00, depth=0.00"
+  },
+  "modelling": {
+    "score": 0.21500000000000002,
+    "evidence": [
+      "classical_models:RandomForest",
+      "classical_models:KNeighbors"
+    ],
+    "rationale": "Modelling coverage=0.25, depth=0.04"
+  },
+  "evaluation": {
+    "score": 0.554,
+    "evidence": [
+      "classification_metrics:roc_auc_score",
+      "model_diagnostics:shap",
+      "interpretability:shap"
+    ],
+    "rationale": "Evaluation coverage=0.75, depth=0.13"
+  },
+  "overall_score": 0.205,
+  "summary": "DU:weak (0.05); DP:weak (0.0); M:weak (0.21500000000000002); E:fair (0.554)"
+}

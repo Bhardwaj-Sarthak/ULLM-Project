@@ -1,0 +1,42 @@
+{
+  "data_understanding": {
+    "score": 0.21400000000000002,
+    "evidence": [
+      "visual_eda:seaborn"
+    ],
+    "rationale": "Data Understanding coverage=0.25, depth=0.04"
+  },
+  "data_preparation": {
+    "score": 0.34,
+    "evidence": [
+      "missing_handling:fillna\\(",
+      "scaling:StandardScaler",
+      "feature_engineering:feature_importances_"
+    ],
+    "rationale": "Data Preparation coverage=0.50, depth=0.10"
+  },
+  "modelling": {
+    "score": 0.421,
+    "evidence": [
+      "classical_models:LogisticRegression",
+      "classical_models:RandomForest",
+      "classical_models:GradientBoosting",
+      "classical_models:XGBClassifier",
+      "cv:cross_val_score",
+      "cv:GridSearchCV"
+    ],
+    "rationale": "Modelling coverage=0.50, depth=0.18"
+  },
+  "evaluation": {
+    "score": 0.5790000000000001,
+    "evidence": [
+      "classification_metrics:roc_auc_score",
+      "model_diagnostics:shap",
+      "interpretability:feature_importances_",
+      "interpretability:shap"
+    ],
+    "rationale": "Evaluation coverage=0.75, depth=0.20"
+  },
+  "overall_score": 0.389,
+  "summary": "DU:weak (0.21400000000000002); DP:weak (0.34); M:fair (0.421); E:fair (0.5790000000000001)"
+}
