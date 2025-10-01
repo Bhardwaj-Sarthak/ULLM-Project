@@ -6,7 +6,7 @@ Diagnostic Score for Validating the Huggingface Data Analyst Agent Maria Dirnber
   <p>
     An autonomous, streaming Jupyter notebook generation & execution agent powered by<br>
     Hugging Face Inference (chat completions), an E2B sandbox for code execution,<br>
-    and a lightweight heuristic evaluation toolkit.
+    and a lightweight heuristic evaluation toolkit that we have added that tests the generated analysis on different aspects.
   </p>
   <p>
     <a href="https://huggingface.co/spaces/lvwerra/jupyter-agent-2">HF Space</a> ·
@@ -105,7 +105,7 @@ pip install -r requirements.txt
 Run locally:
 ```bash
 export HF_TOKEN=hf_...        # or set in PowerShell: $env:HF_TOKEN="hf_xxx"
-export E2B_API_KEY=xyz        # optional
+export E2B_API_KEY=xyz        
 python app.py                 # launches Gradio UI
 ```
 Open the printed local URL. Enter an analytical task (e.g. *"Explore the predict-calorie dataset and build a regression model"*). Watch notebook stream in real time.
